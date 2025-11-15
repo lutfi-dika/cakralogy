@@ -1,0 +1,21 @@
+/* #root {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #4a90e2, #ffffff);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* .hero-bg {
+  height: 100vh;
+  width: 100%;
+} */
