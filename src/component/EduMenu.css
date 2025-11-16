@@ -77,7 +77,6 @@
   font-size: 1.8rem;
 }
 
-
 .edu-card .category {
   font-size: 1.1rem;
   color: #3b82f6;
@@ -88,6 +87,55 @@
   font-size: 1.05rem;
   color: #334155;
   line-height: 1.6;
+}
+
+.detail-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  background: #4f46e5; /* Indigo */
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 12px;
+
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.25);
+}
+
+.detail-btn:hover {
+  background: #4338ca; /* Darker indigo */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(79, 70, 229, 0.35);
+}
+
+.detail-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(79, 70, 229, 0.2);
+}
+
+/* ICON / Arrow anim */
+.detail-btn:hover::after {
+  margin-left: 4px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .detail-btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 14px;
+    padding: 12px 0;
+    border-radius: 10px;
+  }
 }
 
 /* ===== Responsive Mobile ===== */

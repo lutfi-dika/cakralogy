@@ -1,0 +1,178 @@
+/* Wrapper page */
+.course-page {
+  width: 100%;
+  padding-bottom: 60px;
+  background: #f8fafc;
+  font-family: "Inter", sans-serif;
+}
+
+/* Hero Section Elegan */
+.course-hero {
+  position: relative;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb, #3b82f6);
+  color: white;
+  text-align: center;
+  border-radius: 0 0 35px 35px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.course-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.course-category {
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.course-shortdesc {
+  margin-top: 10px;
+  font-size: 18px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.95;
+}
+
+/* Content card utama */
+.course-content-card {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  line-height: 1.8;
+}
+
+.course-content-card h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+.course-full-content {
+  white-space: pre-line;
+  margin-bottom: 20px;
+  color: #334155;
+}
+
+/* Lists */
+.topic-list,
+.benefit-list {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.topic-list li,
+.benefit-list li {
+  margin-bottom: 8px;
+  font-size: 17px;
+  color: #475569;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .course-title {
+    font-size: 40px;
+  }
+
+  .course-shortdesc {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .course-content-card {
+    padding: 25px 20px;
+  }
+
+  .course-content-card h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-hero {
+    padding: 60px 15px;
+    border-radius: 0 0 25px 25px;
+  }
+
+  .course-title {
+    font-size: 32px;
+  }
+
+  .course-category {
+    font-size: 16px;
+  }
+
+  .course-shortdesc {
+    font-size: 15px;
+    max-width: 90%;
+  }
+
+  .course-content-card {
+    padding: 20px 15px;
+    margin: 20px 15px;
+    border-radius: 15px;
+  }
+
+  .course-content-card h2 {
+    font-size: 22px;
+  }
+
+  .topic-list li,
+  .benefit-list li {
+    font-size: 15px;
+  }
+
+  .back-btn {
+    padding: 8px 12px;
+    top: 15px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .course-title {
+    font-size: 26px;
+  }
+
+  .course-category {
+    font-size: 14px;
+  }
+
+  .course-shortdesc {
+    font-size: 14px;
+  }
+
+  .course-content-card h2 {
+    font-size: 20px;
+  }
+
+  .topic-list li,
+  .benefit-list li {
+    font-size: 14px;
+  }
+}

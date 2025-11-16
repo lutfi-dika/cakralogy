@@ -104,7 +104,12 @@
     max-width: 100%;
     text-align: justify;
   }
-  .link-section{
-    text-align: justify;
+  .link-section h4{
+    text-align: center;
+
+  }
+  .link-section ul{
+    margin-top: 3%;
+    /* text-align: justify; */
   }
 }

@@ -6,25 +6,25 @@ const ads = [
         title: "Belajar Pemrograman Sekarang!",
         subtitle: "Materi interaktif + proyek nyata untuk skill profesional.",
         cta: "Daftar Sekarang",
-        bg: "linear-gradient(135deg, #ff6b6b, #f06595)"
+        bg: "#4a90e2"
     },
     {
         title: "Tingkatkan Skill Digitalmu",
         subtitle: "Kursus modern & pengalaman belajar nyata.",
         cta: "Pelajari Lebih Lanjut",
-        bg: "linear-gradient(135deg, #facc15, #f97316)"
+        bg: "#4a90e2"
     },
     {
         title: "Platform Edukasi Profesional",
         subtitle: "Materi terverifikasi + pengalaman belajar optimal.",
         cta: "Gabung Sekarang",
-        bg: "linear-gradient(135deg, #3b82f6, #06b6d4)"
+        bg: "#4a90e2"
     },
     {
         title: "Project Nyata & Interaktif",
         subtitle: "Latihan langsung agar cepat mahir.",
         cta: "Coba Sekarang",
-        bg: "linear-gradient(135deg, #34d399, #10b981)"
+        bg: "#4a90e2"
     }
 ];
 
@@ -45,10 +45,14 @@ export default function CTAAdSection() {
                 style={{ transform: `translateX(-${current * 100}%)` }}
             >
                 {ads.map((ad, index) => (
-                    <div className="cta-ad-banner" key={index} style={{ background: ad.bg }}>
+                    <div
+                        className="cta-ad-banner"
+                        key={index}
+                        style={{ background: ad.bg }}
+                    >
                         <h2>{ad.title}</h2>
                         <p>{ad.subtitle}</p>
-                        <button onClick={() => alert(ad.cta)}>{ad.cta}</button>
+                        <button>{ad.cta}</button>
                     </div>
                 ))}
             </div>
