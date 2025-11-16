@@ -20,6 +20,7 @@ const EduMenu = ({ onOpenCourse }) => {
         { id: 15, title: "Golang", category: "Backend", description: "Backend cepat & efisien." },
         { id: 16, title: "Flask", category: "Backend", description: "Framework Python untuk backend ringan." },
         { id: 17, title: "Geekshelp", category: "Framework", description: "Template Website sederhana" },
+        { id: 18, title: "Visual Studio Code", category: "Framework", description: "Visual Studio Code (VSCode) adalah editor kode " },
 
     ];
 

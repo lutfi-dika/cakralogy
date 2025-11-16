@@ -20,8 +20,12 @@ const CourseDetail = ({ courseId, onBack }) => {
             {/* Main Content Card */}
             <div className="course-content-card">
                 {/* Tentang Kursus */}
-                <h2>📘 Tentang Kursus</h2>
-                <p className="course-full-content">{course.content}</p>
+                {course.content && (
+                    <>
+                        <h2>📘 Tentang Kursus</h2>
+                        <p className="course-full-content">{course.content}</p>
+                    </>
+                )}
 
                 {/* Materi / Modules */}
                 {course.modules && course.modules.length > 0 && (
@@ -30,11 +34,25 @@ const CourseDetail = ({ courseId, onBack }) => {
                         {course.modules.map((module, idx) => (
                             <div key={idx} className="module-card">
                                 <h3>{module.title}</h3>
+
                                 {module.submodules && module.submodules.length > 0 && (
                                     <ul className="topic-list">
                                         {module.submodules.map((sub, subIdx) => (
                                             <li key={subIdx}>
                                                 <strong>{sub.title}:</strong> {sub.content}
+                                                {/* Tombol Video jika ada */}
+                                                {sub.video && (
+                                                    <div>
+                                                        <a
+                                                            href={sub.video}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="video-btn"
+                                                        >
+                                                            ▶ Tonton Video
+                                                        </a>
+                                                    </div>
+                                                )}
                                             </li>
                                         ))}
                                     </ul>

@@ -1075,391 +1075,674 @@ export const courseData = {
     ],
   },
   // =======================
-// Course 13: PostgreSQL
-// =======================
-13: {
-  id:13,
-  title:"PostgreSQL",
-  category:"Database",
-  description:"Database canggih & powerful",
-  modules:[
-    {
-      title:"Modul 1: Pengenalan PostgreSQL",
-      submodules:[
-        {title:"Apa itu PostgreSQL", content:"Database relasional open-source, canggih dan scalable"},
-        {title:"Install & Setup", content:"Install via pgAdmin, Docker, atau OS package manager"},
-        {title:"Database & Schema", content:"Buat database, schema, tabel"},
-        {title:"Data Types", content:"INT, VARCHAR, TEXT, BOOLEAN, JSON, ARRAY"},
-        {title:"Tips", content:"Gunakan schema untuk organisasi tabel lebih baik"}
-      ],
-      exercises:[
-        "Buat database baru dan schema",
-        "Buat tabel user & product dengan tipe data lengkap"
-      ],
-      miniProject:"Buat database e-commerce lengkap dengan schema"
-    },
-    {
-      title:"Modul 2: Query Dasar",
-      submodules:[
-        {title:"SELECT, INSERT, UPDATE, DELETE", content:"Query dasar CRUD"},
-        {title:"WHERE, ORDER BY, LIMIT, OFFSET", content:"Filter & sort data"},
-        {title:"Tips", content:"Gunakan LIMIT & OFFSET untuk pagination"}
-      ],
-      exercises:[
-        "Insert data user & product",
-        "Update harga produk tertentu",
-        "Hapus user yang tidak aktif"
-      ],
-      miniProject:"Buat laporan pengguna & produk lengkap"
-    },
-    {
-      title:"Modul 3: Joins & Relasi",
-      submodules:[
-        {title:"INNER, LEFT, RIGHT JOIN", content:"Gabungkan data dari beberapa tabel"},
-        {title:"One-to-One, One-to-Many, Many-to-Many", content:"Relasi antar tabel"},
-        {title:"Tips", content:"Gunakan foreign key & indexing untuk integritas & performa"}
-      ],
-      exercises:[
-        "Buat join user & orders",
-        "Tampilkan semua order user tertentu"
-      ],
-      miniProject:"Buat sistem laporan penjualan lengkap"
-    },
-    {
-      title:"Modul 4: Indexing & Performance",
-      submodules:[
-        {title:"Primary Key & Unique Index", content:"Menjaga integritas data"},
-        {title:"B-Tree, Hash, GIN, GiST Index", content:"Jenis index untuk query cepat"},
-        {title:"Query Optimization", content:"EXPLAIN ANALYZE untuk cek performa"},
-        {title:"Tips", content:"Gunakan indexing di kolom yang sering dicari"}
-      ],
-      exercises:[
-        "Buat index pada tabel produk",
-        "Cek query plan menggunakan EXPLAIN ANALYZE"
-      ],
-      miniProject:"Optimasi database toko online besar dengan indexing"
-    },
-    {
-      title:"Modul 5: Project PostgreSQL Lengkap",
-      submodules:[
-        {title:"Integrasi CRUD & Relasi", content:"Buat aplikasi backend dengan multiple table relasi"},
-        {title:"Tips", content:"Gunakan schema, indexing, foreign key untuk performa & integritas"}
-      ],
-      exercises:[
-        "Buat database toko online lengkap dengan user, product, orders",
-        "Implementasikan query laporan penjualan & user"
-      ],
-      miniProject:"Buat backend e-commerce lengkap menggunakan PostgreSQL"
-    }
-  ]
-},
+  // Course 13: PostgreSQL
+  // =======================
+  13: {
+    id: 13,
+    title: "PostgreSQL",
+    category: "Database",
+    description: "Database canggih & powerful",
+    modules: [
+      {
+        title: "Modul 1: Pengenalan PostgreSQL",
+        submodules: [
+          {
+            title: "Apa itu PostgreSQL",
+            content: "Database relasional open-source, canggih dan scalable",
+          },
+          {
+            title: "Install & Setup",
+            content: "Install via pgAdmin, Docker, atau OS package manager",
+          },
+          {
+            title: "Database & Schema",
+            content: "Buat database, schema, tabel",
+          },
+          {
+            title: "Data Types",
+            content: "INT, VARCHAR, TEXT, BOOLEAN, JSON, ARRAY",
+          },
+          {
+            title: "Tips",
+            content: "Gunakan schema untuk organisasi tabel lebih baik",
+          },
+        ],
+        exercises: [
+          "Buat database baru dan schema",
+          "Buat tabel user & product dengan tipe data lengkap",
+        ],
+        miniProject: "Buat database e-commerce lengkap dengan schema",
+      },
+      {
+        title: "Modul 2: Query Dasar",
+        submodules: [
+          {
+            title: "SELECT, INSERT, UPDATE, DELETE",
+            content: "Query dasar CRUD",
+          },
+          {
+            title: "WHERE, ORDER BY, LIMIT, OFFSET",
+            content: "Filter & sort data",
+          },
+          { title: "Tips", content: "Gunakan LIMIT & OFFSET untuk pagination" },
+        ],
+        exercises: [
+          "Insert data user & product",
+          "Update harga produk tertentu",
+          "Hapus user yang tidak aktif",
+        ],
+        miniProject: "Buat laporan pengguna & produk lengkap",
+      },
+      {
+        title: "Modul 3: Joins & Relasi",
+        submodules: [
+          {
+            title: "INNER, LEFT, RIGHT JOIN",
+            content: "Gabungkan data dari beberapa tabel",
+          },
+          {
+            title: "One-to-One, One-to-Many, Many-to-Many",
+            content: "Relasi antar tabel",
+          },
+          {
+            title: "Tips",
+            content:
+              "Gunakan foreign key & indexing untuk integritas & performa",
+          },
+        ],
+        exercises: [
+          "Buat join user & orders",
+          "Tampilkan semua order user tertentu",
+        ],
+        miniProject: "Buat sistem laporan penjualan lengkap",
+      },
+      {
+        title: "Modul 4: Indexing & Performance",
+        submodules: [
+          {
+            title: "Primary Key & Unique Index",
+            content: "Menjaga integritas data",
+          },
+          {
+            title: "B-Tree, Hash, GIN, GiST Index",
+            content: "Jenis index untuk query cepat",
+          },
+          {
+            title: "Query Optimization",
+            content: "EXPLAIN ANALYZE untuk cek performa",
+          },
+          {
+            title: "Tips",
+            content: "Gunakan indexing di kolom yang sering dicari",
+          },
+        ],
+        exercises: [
+          "Buat index pada tabel produk",
+          "Cek query plan menggunakan EXPLAIN ANALYZE",
+        ],
+        miniProject: "Optimasi database toko online besar dengan indexing",
+      },
+      {
+        title: "Modul 5: Project PostgreSQL Lengkap",
+        submodules: [
+          {
+            title: "Integrasi CRUD & Relasi",
+            content: "Buat aplikasi backend dengan multiple table relasi",
+          },
+          {
+            title: "Tips",
+            content:
+              "Gunakan schema, indexing, foreign key untuk performa & integritas",
+          },
+        ],
+        exercises: [
+          "Buat database toko online lengkap dengan user, product, orders",
+          "Implementasikan query laporan penjualan & user",
+        ],
+        miniProject: "Buat backend e-commerce lengkap menggunakan PostgreSQL",
+      },
+    ],
+  },
 
-// =======================
-// Course 14: Python
-// =======================
-14: {
-  id:14,
-  title:"Python",
-  category:"Backend",
-  description:"Bahasa serbaguna untuk backend",
-  modules:[
-    {
-      title:"Modul 1: Pengenalan Python",
-      submodules:[
-        {title:"Sejarah & Kelebihan Python", content:"Bahasa serbaguna, mudah dipelajari, banyak framework"},
-        {title:"Setup & IDE", content:"Install Python, gunakan VSCode atau PyCharm"},
-        {title:"Syntax Dasar", content:"Variable, tipe data, operator"},
-        {title:"Tips", content:"Gunakan virtual environment untuk project"}
-      ],
-      exercises:[
-        "Buat script hello world",
-        "Coba variable, string, number, boolean"
-      ],
-      miniProject:"Buat kalkulator sederhana di console"
-    },
-    {
-      title:"Modul 2: Control Flow & Function",
-      submodules:[
-        {title:"Conditionals", content:"if, elif, else"},
-        {title:"Loops", content:"for, while, nested loop"},
-        {title:"Function", content:"def, return, parameter"},
-        {title:"Tips", content:"Gunakan docstring di function"}
-      ],
-      exercises:[
-        "Buat program cek ganjil/genap",
-        "Loop 1-10 dan tampilkan hasil",
-        "Buat function hitung luas persegi panjang"
-      ],
-      miniProject:"Buat mini project kalkulator statistik"
-    },
-    {
-      title:"Modul 3: Data Structure",
-      submodules:[
-        {title:"List, Tuple, Set, Dictionary", content:"Menyimpan data secara efisien"},
-        {title:"Comprehension", content:"List & dict comprehension"},
-        {title:"Tips", content:"Pahami mutable & immutable"}
-      ],
-      exercises:[
-        "Buat list nama teman",
-        "Loop dictionary untuk print key & value",
-        "Gunakan set untuk unik data"
-      ],
-      miniProject:"Buat program pengelola daftar siswa & nilai"
-    },
-    {
-      title:"Modul 4: File & Module",
-      submodules:[
-        {title:"File Handling", content:"open, read, write, append"},
-        {title:"Module & Package", content:"import, pip install"},
-        {title:"Tips", content:"Gunakan exception handling saat buka file"}
-      ],
-      exercises:[
-        "Buat file text & tulis data",
-        "Baca data dari file & tampilkan"
-      ],
-      miniProject:"Buat aplikasi sederhana penyimpanan catatan harian"
-    },
-    {
-      title:"Modul 5: Backend Web dengan Flask",
-      submodules:[
-        {title:"Setup Flask", content:"Install Flask, buat app.py"},
-        {title:"Routing & Template", content:"@app.route, render_template"},
-        {title:"Forms & Request", content:"GET, POST, request.form"},
-        {title:"Tips", content:"Pisahkan routes & templates untuk maintainable code"}
-      ],
-      exercises:[
-        "Buat route home & about",
-        "Buat form contact dan tampilkan data input"
-      ],
-      miniProject:"Buat aplikasi blog sederhana dengan Flask"
-    }
-  ]
-},
+  // =======================
+  // Course 14: Python
+  // =======================
+  14: {
+    id: 14,
+    title: "Python",
+    category: "Backend",
+    description: "Bahasa serbaguna untuk backend",
+    modules: [
+      {
+        title: "Modul 1: Pengenalan Python",
+        submodules: [
+          {
+            title: "Sejarah & Kelebihan Python",
+            content: "Bahasa serbaguna, mudah dipelajari, banyak framework",
+          },
+          {
+            title: "Setup & IDE",
+            content: "Install Python, gunakan VSCode atau PyCharm",
+          },
+          { title: "Syntax Dasar", content: "Variable, tipe data, operator" },
+          {
+            title: "Tips",
+            content: "Gunakan virtual environment untuk project",
+          },
+        ],
+        exercises: [
+          "Buat script hello world",
+          "Coba variable, string, number, boolean",
+        ],
+        miniProject: "Buat kalkulator sederhana di console",
+      },
+      {
+        title: "Modul 2: Control Flow & Function",
+        submodules: [
+          { title: "Conditionals", content: "if, elif, else" },
+          { title: "Loops", content: "for, while, nested loop" },
+          { title: "Function", content: "def, return, parameter" },
+          { title: "Tips", content: "Gunakan docstring di function" },
+        ],
+        exercises: [
+          "Buat program cek ganjil/genap",
+          "Loop 1-10 dan tampilkan hasil",
+          "Buat function hitung luas persegi panjang",
+        ],
+        miniProject: "Buat mini project kalkulator statistik",
+      },
+      {
+        title: "Modul 3: Data Structure",
+        submodules: [
+          {
+            title: "List, Tuple, Set, Dictionary",
+            content: "Menyimpan data secara efisien",
+          },
+          { title: "Comprehension", content: "List & dict comprehension" },
+          { title: "Tips", content: "Pahami mutable & immutable" },
+        ],
+        exercises: [
+          "Buat list nama teman",
+          "Loop dictionary untuk print key & value",
+          "Gunakan set untuk unik data",
+        ],
+        miniProject: "Buat program pengelola daftar siswa & nilai",
+      },
+      {
+        title: "Modul 4: File & Module",
+        submodules: [
+          { title: "File Handling", content: "open, read, write, append" },
+          { title: "Module & Package", content: "import, pip install" },
+          {
+            title: "Tips",
+            content: "Gunakan exception handling saat buka file",
+          },
+        ],
+        exercises: [
+          "Buat file text & tulis data",
+          "Baca data dari file & tampilkan",
+        ],
+        miniProject: "Buat aplikasi sederhana penyimpanan catatan harian",
+      },
+      {
+        title: "Modul 5: Backend Web dengan Flask",
+        submodules: [
+          { title: "Setup Flask", content: "Install Flask, buat app.py" },
+          {
+            title: "Routing & Template",
+            content: "@app.route, render_template",
+          },
+          { title: "Forms & Request", content: "GET, POST, request.form" },
+          {
+            title: "Tips",
+            content: "Pisahkan routes & templates untuk maintainable code",
+          },
+        ],
+        exercises: [
+          "Buat route home & about",
+          "Buat form contact dan tampilkan data input",
+        ],
+        miniProject: "Buat aplikasi blog sederhana dengan Flask",
+      },
+    ],
+  },
 
-// =======================
-// Course 15: Golang
-// =======================
-15: {
-  id:15,
-  title:"Golang",
-  category:"Backend",
-  description:"Backend cepat & efisien",
-  modules:[
-    {
-      title:"Modul 1: Pengenalan Golang",
-      submodules:[
-        {title:"Apa itu Golang", content:"Bahasa backend cepat & performa tinggi"},
-        {title:"Install & Setup", content:"Install Golang, setup GOPATH & workspace"},
-        {title:"Syntax Dasar", content:"Variable, tipe data, operator"},
-        {title:"Tips", content:"Gunakan go fmt untuk format code otomatis"}
-      ],
-      exercises:[
-        "Buat program hello world",
-        "Coba variable & tipe data"
-      ],
-      miniProject:"Buat kalkulator sederhana di console"
-    },
-    {
-      title:"Modul 2: Function & Struct",
-      submodules:[
-        {title:"Function", content:"Deklarasi, parameter, return"},
-        {title:"Struct", content:"Membuat tipe data custom"},
-        {title:"Tips", content:"Gunakan struct untuk representasi object"}
-      ],
-      exercises:[
-        "Buat function hitung luas",
-        "Buat struct mahasiswa dengan nama, umur, nilai"
-      ],
-      miniProject:"Buat program pengelola data mahasiswa sederhana"
-    },
-    {
-      title:"Modul 3: Routing & Server",
-      submodules:[
-        {title:"net/http package", content:"Membuat server & route"},
-        {title:"Request & Response", content:"Handle GET & POST"},
-        {title:"Tips", content:"Gunakan goroutine untuk concurrent request"}
-      ],
-      exercises:[
-        "Buat server port 8080",
-        "Buat route /home dan /about"
-      ],
-      miniProject:"Buat API sederhana dengan route GET & POST"
-    },
-    {
-      title:"Modul 4: Database & CRUD",
-      submodules:[
-        {title:"Database Connection", content:"Connect ke MySQL/PostgreSQL"},
-        {title:"CRUD Operation", content:"Insert, Select, Update, Delete"},
-        {title:"Tips", content:"Gunakan sqlx atau GORM untuk ORM"}
-      ],
-      exercises:[
-        "Connect ke database",
-        "Insert & select data"
-      ],
-      miniProject:"Buat API backend CRUD user sederhana"
-    },
-    {
-      title:"Modul 5: Project Golang Lengkap",
-      submodules:[
-        {title:"API Backend", content:"Integrasi server, routing, CRUD"},
-        {title:"Tips", content:"Pisahkan controller, service, model untuk maintainable code"}
-      ],
-      exercises:[
-        "Buat API user management",
-        "Tambahkan validasi input & error handling"
-      ],
-      miniProject:"Buat backend web lengkap menggunakan Golang & database"
-    }
-  ]
-},
+  // =======================
+  // Course 15: Golang
+  // =======================
+  15: {
+    id: 15,
+    title: "Golang",
+    category: "Backend",
+    description: "Backend cepat & efisien",
+    modules: [
+      {
+        title: "Modul 1: Pengenalan Golang",
+        submodules: [
+          {
+            title: "Apa itu Golang",
+            content: "Bahasa backend cepat & performa tinggi",
+          },
+          {
+            title: "Install & Setup",
+            content: "Install Golang, setup GOPATH & workspace",
+          },
+          { title: "Syntax Dasar", content: "Variable, tipe data, operator" },
+          {
+            title: "Tips",
+            content: "Gunakan go fmt untuk format code otomatis",
+          },
+        ],
+        exercises: ["Buat program hello world", "Coba variable & tipe data"],
+        miniProject: "Buat kalkulator sederhana di console",
+      },
+      {
+        title: "Modul 2: Function & Struct",
+        submodules: [
+          { title: "Function", content: "Deklarasi, parameter, return" },
+          { title: "Struct", content: "Membuat tipe data custom" },
+          {
+            title: "Tips",
+            content: "Gunakan struct untuk representasi object",
+          },
+        ],
+        exercises: [
+          "Buat function hitung luas",
+          "Buat struct mahasiswa dengan nama, umur, nilai",
+        ],
+        miniProject: "Buat program pengelola data mahasiswa sederhana",
+      },
+      {
+        title: "Modul 3: Routing & Server",
+        submodules: [
+          { title: "net/http package", content: "Membuat server & route" },
+          { title: "Request & Response", content: "Handle GET & POST" },
+          {
+            title: "Tips",
+            content: "Gunakan goroutine untuk concurrent request",
+          },
+        ],
+        exercises: ["Buat server port 8080", "Buat route /home dan /about"],
+        miniProject: "Buat API sederhana dengan route GET & POST",
+      },
+      {
+        title: "Modul 4: Database & CRUD",
+        submodules: [
+          {
+            title: "Database Connection",
+            content: "Connect ke MySQL/PostgreSQL",
+          },
+          {
+            title: "CRUD Operation",
+            content: "Insert, Select, Update, Delete",
+          },
+          { title: "Tips", content: "Gunakan sqlx atau GORM untuk ORM" },
+        ],
+        exercises: ["Connect ke database", "Insert & select data"],
+        miniProject: "Buat API backend CRUD user sederhana",
+      },
+      {
+        title: "Modul 5: Project Golang Lengkap",
+        submodules: [
+          { title: "API Backend", content: "Integrasi server, routing, CRUD" },
+          {
+            title: "Tips",
+            content:
+              "Pisahkan controller, service, model untuk maintainable code",
+          },
+        ],
+        exercises: [
+          "Buat API user management",
+          "Tambahkan validasi input & error handling",
+        ],
+        miniProject: "Buat backend web lengkap menggunakan Golang & database",
+      },
+    ],
+  },
 
-// =======================
-// Course 16: Flask
-// =======================
-16: {
-  id:16,
-  title:"Flask",
-  category:"Backend",
-  description:"Framework Python untuk backend ringan",
-  modules:[
-    {
-      title:"Modul 1: Pengenalan Flask",
-      submodules:[
-        {title:"Apa itu Flask", content:"Framework Python ringan untuk web backend"},
-        {title:"Install & Setup", content:"Install Flask, buat virtual environment"},
-        {title:"Hello World App", content:"Buat app.py & route /"}
-      ],
-      exercises:[
-        "Buat app hello world",
-        "Test route / di browser"
-      ],
-      miniProject:"Buat halaman home sederhana"
-    },
-    {
-      title:"Modul 2: Routing & Template",
-      submodules:[
-        {title:"Route Basics", content:"@app.route('/')"},
-        {title:"Template Rendering", content:"render_template, Jinja2 syntax"},
-        {title:"Tips", content:"Pisahkan templates & static files"}
-      ],
-      exercises:[
-        "Buat route /about & /contact",
-        "Render template dengan data dinamis"
-      ],
-      miniProject:"Buat multi-page website sederhana dengan Flask"
-    },
-    {
-      title:"Modul 3: Forms & Request",
-      submodules:[
-        {title:"GET & POST", content:"request.method, request.form"},
-        {title:"Form Validation", content:"Cek input kosong, tipe data"},
-        {title:"Tips", content:"Gunakan flash messages untuk feedback user"}
-      ],
-      exercises:[
-        "Buat form login & registrasi",
-        "Validasi input & tampilkan error"
-      ],
-      miniProject:"Buat aplikasi login sederhana dengan Flask"
-    },
-    {
-      title:"Modul 4: Database & ORM",
-      submodules:[
-        {title:"SQLAlchemy Setup", content:"Connect ke database, definisi model"},
-        {title:"CRUD dengan ORM", content:"Insert, select, update, delete"},
-        {title:"Tips", content:"Pisahkan model & routes untuk maintainable code"}
-      ],
-      exercises:[
-        "Buat model User & Post",
-        "Insert data menggunakan ORM"
-      ],
-      miniProject:"Buat blog sederhana dengan Flask & SQLAlchemy"
-    },
-    {
-      title:"Modul 5: Project Flask Lengkap",
-      submodules:[
-        {title:"Integrasi Routing, Template, Database", content:"Buat aplikasi web lengkap"},
-        {title:"Tips & Best Practice", content:"Gunakan blueprint, validation, dan modular code"}
-      ],
-      exercises:[
-        "Buat aplikasi web dengan login, CRUD post",
-        "Integrasikan template & database"
-      ],
-      miniProject:"Buat aplikasi blog lengkap dengan user, post, CRUD & template"
-    }
-  ]
-},
+  // =======================
+  // Course 16: Flask
+  // =======================
+  16: {
+    id: 16,
+    title: "Flask",
+    category: "Backend",
+    description: "Framework Python untuk backend ringan",
+    modules: [
+      {
+        title: "Modul 1: Pengenalan Flask",
+        submodules: [
+          {
+            title: "Apa itu Flask",
+            content: "Framework Python ringan untuk web backend",
+          },
+          {
+            title: "Install & Setup",
+            content: "Install Flask, buat virtual environment",
+          },
+          { title: "Hello World App", content: "Buat app.py & route /" },
+        ],
+        exercises: ["Buat app hello world", "Test route / di browser"],
+        miniProject: "Buat halaman home sederhana",
+      },
+      {
+        title: "Modul 2: Routing & Template",
+        submodules: [
+          { title: "Route Basics", content: "@app.route('/')" },
+          {
+            title: "Template Rendering",
+            content: "render_template, Jinja2 syntax",
+          },
+          { title: "Tips", content: "Pisahkan templates & static files" },
+        ],
+        exercises: [
+          "Buat route /about & /contact",
+          "Render template dengan data dinamis",
+        ],
+        miniProject: "Buat multi-page website sederhana dengan Flask",
+      },
+      {
+        title: "Modul 3: Forms & Request",
+        submodules: [
+          { title: "GET & POST", content: "request.method, request.form" },
+          { title: "Form Validation", content: "Cek input kosong, tipe data" },
+          {
+            title: "Tips",
+            content: "Gunakan flash messages untuk feedback user",
+          },
+        ],
+        exercises: [
+          "Buat form login & registrasi",
+          "Validasi input & tampilkan error",
+        ],
+        miniProject: "Buat aplikasi login sederhana dengan Flask",
+      },
+      {
+        title: "Modul 4: Database & ORM",
+        submodules: [
+          {
+            title: "SQLAlchemy Setup",
+            content: "Connect ke database, definisi model",
+          },
+          {
+            title: "CRUD dengan ORM",
+            content: "Insert, select, update, delete",
+          },
+          {
+            title: "Tips",
+            content: "Pisahkan model & routes untuk maintainable code",
+          },
+        ],
+        exercises: ["Buat model User & Post", "Insert data menggunakan ORM"],
+        miniProject: "Buat blog sederhana dengan Flask & SQLAlchemy",
+      },
+      {
+        title: "Modul 5: Project Flask Lengkap",
+        submodules: [
+          {
+            title: "Integrasi Routing, Template, Database",
+            content: "Buat aplikasi web lengkap",
+          },
+          {
+            title: "Tips & Best Practice",
+            content: "Gunakan blueprint, validation, dan modular code",
+          },
+        ],
+        exercises: [
+          "Buat aplikasi web dengan login, CRUD post",
+          "Integrasikan template & database",
+        ],
+        miniProject:
+          "Buat aplikasi blog lengkap dengan user, post, CRUD & template",
+      },
+    ],
+  },
 
- 17: {
+  17: {
     id: 17,
     title: "GeeksHelp",
     category: "Educational Portal",
-    description: "Belajar berbagai teknologi dan keterampilan coding melalui GeeksHelp, portal edukasi interaktif untuk mahasiswa dan developer.",
+    description:
+      "Belajar berbagai teknologi dan keterampilan coding melalui GeeksHelp, portal edukasi interaktif untuk mahasiswa dan developer.",
     modules: [
       {
         title: "Modul 1: Pengenalan GeeksHelp",
         submodules: [
-          { 
-            title: "Apa itu GeeksHelp", 
-            content: "GeeksHelp adalah portal edukasi interaktif yang menyediakan materi coding, tutorial, quiz, dan project untuk mahasiswa dan developer." 
+          {
+            title: "Apa itu GeeksHelp",
+            content:
+              "GeeksHelp adalah portal edukasi interaktif yang menyediakan materi coding, tutorial, quiz, dan project untuk mahasiswa dan developer.",
           },
-          { 
-            title: "Fitur Utama", 
-            content: "Materi HTML, CSS, JavaScript, Web Development, AI, Computer Fundamentals, Quiz, Mini Projects, dan forum diskusi." 
+          {
+            title: "Fitur Utama",
+            content:
+              "Materi HTML, CSS, JavaScript, Web Development, AI, Computer Fundamentals, Quiz, Mini Projects, dan forum diskusi.",
           },
-          { 
-            title: "Manfaat untuk Developer", 
-            content: "Mempercepat pembelajaran, meningkatkan skill praktis, dan menyediakan komunitas untuk bertanya dan berbagi solusi." 
-          }
+          {
+            title: "Manfaat untuk Developer",
+            content:
+              "Mempercepat pembelajaran, meningkatkan skill praktis, dan menyediakan komunitas untuk bertanya dan berbagi solusi.",
+          },
         ],
         exercises: [
           "Jelajahi halaman tutorial HTML, CSS, dan JavaScript",
           "Ikuti salah satu quiz untuk menguji pemahaman",
-          "Baca artikel terbaru di GeeksHelp blog"
+          "Baca artikel terbaru di GeeksHelp blog",
         ],
-        miniProject: "Buat catatan pribadi dari tutorial dan quiz favorit"
+        miniProject: "Buat catatan pribadi dari tutorial dan quiz favorit",
       },
       {
         title: "Modul 2: Belajar HTML & CSS",
         submodules: [
-          { title: "HTML Dasar", content: "Membuat struktur halaman web menggunakan tag HTML." },
-          { title: "CSS Styling", content: "Memberi gaya pada halaman web menggunakan CSS." },
-          { title: "Project Mini", content: "Membuat halaman profil sederhana menggunakan HTML & CSS." }
+          {
+            title: "HTML Dasar",
+            content: "Membuat struktur halaman web menggunakan tag HTML.",
+          },
+          {
+            title: "CSS Styling",
+            content: "Memberi gaya pada halaman web menggunakan CSS.",
+          },
+          {
+            title: "Project Mini",
+            content: "Membuat halaman profil sederhana menggunakan HTML & CSS.",
+          },
         ],
         exercises: [
           "Buat halaman HTML sederhana",
           "Tambahkan CSS untuk mempercantik halaman",
-          "Eksperimen dengan layout Flexbox dan Grid"
+          "Eksperimen dengan layout Flexbox dan Grid",
         ],
-        miniProject: "Buat landing page portofolio sederhana"
+        miniProject: "Buat landing page portofolio sederhana",
       },
       {
         title: "Modul 3: JavaScript & Interaktivitas",
         submodules: [
-          { title: "Dasar JavaScript", content: "Memahami variabel, fungsi, dan event handling." },
-          { title: "DOM Manipulation", content: "Mengubah konten dan style halaman secara dinamis." },
-          { title: "Mini Project JS", content: "Membuat kalkulator sederhana atau todo list." }
+          {
+            title: "Dasar JavaScript",
+            content: "Memahami variabel, fungsi, dan event handling.",
+          },
+          {
+            title: "DOM Manipulation",
+            content: "Mengubah konten dan style halaman secara dinamis.",
+          },
+          {
+            title: "Mini Project JS",
+            content: "Membuat kalkulator sederhana atau todo list.",
+          },
         ],
         exercises: [
           "Buat fungsi JavaScript untuk validasi form",
           "Manipulasi DOM untuk menambahkan elemen baru",
-          "Coba project mini interaktif"
+          "Coba project mini interaktif",
         ],
-        miniProject: "Buat aplikasi todo list dengan JavaScript"
+        miniProject: "Buat aplikasi todo list dengan JavaScript",
       },
       {
         title: "Modul 4: Proyek & Kolaborasi",
         submodules: [
-          { title: "Mini Projects", content: "Mengerjakan proyek kecil dari template GeeksHelp." },
-          { title: "Forum Diskusi", content: "Bertanya dan membantu sesama developer di forum." },
-          { title: "Kolaborasi Proyek", content: "Membuat proyek bersama teman atau komunitas." }
+          {
+            title: "Mini Projects",
+            content: "Mengerjakan proyek kecil dari template GeeksHelp.",
+          },
+          {
+            title: "Forum Diskusi",
+            content: "Bertanya dan membantu sesama developer di forum.",
+          },
+          {
+            title: "Kolaborasi Proyek",
+            content: "Membuat proyek bersama teman atau komunitas.",
+          },
         ],
         exercises: [
           "Pilih mini project dan selesaikan sesuai instruksi",
           "Tanyakan satu pertanyaan coding di forum",
-          "Buat repository GitHub untuk project kolaborasi"
+          "Buat repository GitHub untuk project kolaborasi",
         ],
-        miniProject: "Buat website sederhana menggunakan HTML, CSS, dan JS, lalu share ke komunitas GeeksHelp"
+        miniProject:
+          "Buat website sederhana menggunakan HTML, CSS, dan JS, lalu share ke komunitas GeeksHelp",
+      },
+    ],
+  },
+  18: {
+    id: 18,
+    title: "Belajar VSCode Lengkap",
+    category: "Developer Tools",
+    description:
+      "Pelajari Visual Studio Code dari instalasi hingga penggunaan lanjutan untuk coding, debugging, dan kolaborasi. Tutorial lengkap dengan video step-by-step untuk setiap submodul.",
+    modules: [
+      {
+        title: "Modul 1: Pengenalan VSCode",
+        submodules: [
+          {
+            title: "Apa itu VSCode",
+            content:
+              "Visual Studio Code (VSCode) adalah editor kode ringan, cepat, dan gratis dengan fitur seperti debugging, extensions, dan Git integration.",
+            video: "https://www.youtube.com/watch?v=VqCgcpAypFQ",
+          },
+          {
+            title: "Fitur Utama VSCode",
+            content:
+              "Syntax highlighting, IntelliSense, integrated terminal, extensions marketplace, Git integration, multi-language support, live preview.",
+            video: "https://www.youtube.com/watch?v=VqCgcpAypFQ&t=45s",
+          },
+          {
+            title: "Manfaat Menggunakan VSCode",
+            content:
+              "Mempercepat penulisan kode, mempermudah debugging, menyediakan ekstensi untuk banyak bahasa, dan komunitas besar.",
+            video: "https://www.youtube.com/watch?v=VqCgcpAypFQ&t=90s",
+          },
+        ],
+        exercises: [
+          "Jelajahi tampilan VSCode dan menu utama",
+          "Coba fitur Quick Open (Ctrl+P / Cmd+P)",
+          "Cek extensions marketplace",
+        ],
+        miniProject:
+          "Buat catatan tentang fitur VSCode yang paling berguna untuk kamu",
+      },
+      {
+        title: "Modul 2: Instalasi VSCode",
+        submodules: [
+          {
+            title: "Download VSCode",
+            content:
+              "Unduh VSCode dari situs resmi: https://code.visualstudio.com/ untuk Windows, macOS, atau Linux.",
+            video: "https://www.youtube.com/watch?v=WPqXP_kLzpo",
+          },
+          {
+            title: "Install VSCode",
+            content:
+              "Ikuti panduan instalasi sesuai OS. Pilih lokasi instalasi, centang opsi 'Add to PATH', dan selesaikan proses instalasi.",
+            video: "https://www.youtube.com/watch?v=WPqXP_kLzpo&t=60s",
+          },
+          {
+            title: "Menjalankan VSCode Pertama Kali",
+            content:
+              "Buka VSCode, buat workspace baru, dan kenali tampilan utama: Explorer, Source Control, Run & Debug, Extensions.",
+            video: "https://www.youtube.com/watch?v=WPqXP_kLzpo&t=120s",
+          },
+        ],
+        exercises: [
+          "Download VSCode sesuai OS",
+          "Install VSCode dan buka editor pertama kali",
+          "Buat folder project baru dan buka di VSCode",
+        ],
+        miniProject:
+          "Setup workspace pertama dengan folder project dan file README.md",
+      },
+      {
+        title: "Modul 3: Penggunaan Dasar VSCode",
+        submodules: [
+          {
+            title: "Membuat File & Menulis Kode",
+            content:
+              "Buat file baru dengan ekstensi sesuai bahasa: .html, .css, .js. Tulis kode sederhana.",
+            video: "https://www.youtube.com/watch?v=WPqXP_kLzpo&t=180s",
+          },
+          {
+            title: "Extensions Populer",
+            content:
+              "Install extensions seperti Live Server, Prettier, ESLint, Code Runner.",
+            video: "https://www.youtube.com/watch?v=WPqXP_kLzpo&t=240s",
+          },
+          {
+            title: "Debugging & Integrated Terminal",
+            content:
+              "Gunakan terminal untuk menjalankan perintah, dan debug tools untuk memeriksa kode.",
+            video: "https://www.youtube.com/watch?v=WPqXP_kLzpo&t=300s",
+          },
+          {
+            title: "Tips Menggunakan VSCode",
+            content:
+              "Shortcut, multi-cursor, snippets, Zen Mode, split editor, dan command palette.",
+            video: "https://www.youtube.com/watch?v=WPqXP_kLzpo&t=360s",
+          },
+        ],
+        exercises: [
+          "Buat file HTML, CSS, dan JS sederhana",
+          "Install dan jalankan Live Server",
+          "Coba debug kode menggunakan fitur Debug VSCode",
+          "Eksperimen dengan shortcut dan multi-cursor",
+        ],
+        miniProject: "Buat halaman web sederhana dan jalankan di Live Server",
+      },
+      {
+        title: "Modul 4: Kolaborasi & Integrasi Lanjutan",
+        submodules: [
+          {
+            title: "Integrasi Git",
+            content:
+              "Hubungkan project dengan GitHub, commit perubahan, push/pull langsung dari VSCode.",
+            video: "https://www.youtube.com/watch?v=fje3M8qYPOU",
+          },
+          {
+            title: "Live Share",
+            content:
+              "Berbagi coding session real-time dengan teman menggunakan Live Share extension.",
+            video: "https://www.youtube.com/watch?v=fje3M8qYPOU&t=60s",
+          },
+          {
+            title: "Project & Workspace Management",
+            content:
+              "Kelola beberapa project, gunakan workspace, dan organize folder dengan mudah.",
+            video: "https://www.youtube.com/watch?v=fje3M8qYPOU&t=120s",
+          },
+          {
+            title: "Tips Lanjutan",
+            content:
+              "Custom theme, settings sync, debugging lanjutan, snippets, dan task automation.",
+            video: "https://www.youtube.com/watch?v=fje3M8qYPOU&t=180s",
+          },
+        ],
+        exercises: [
+          "Push project pertama ke GitHub",
+          "Coba Live Share dengan teman",
+          "Atur workspace dengan beberapa project",
+          "Gunakan task automation untuk build sederhana",
+        ],
+        miniProject:
+          "Buat project web interaktif dan share ke GitHub, kemudian lakukan sesi Live Share dengan teman",
       }
     ]
   }
-}
+};
