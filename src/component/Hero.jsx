@@ -1,5 +1,6 @@
 import React from "react";
 import "./hero.css";
+import logo from "../assets/logo.png"
 
 export default function HeroSection() {
     return (
@@ -7,16 +8,16 @@ export default function HeroSection() {
             <div className="container">
 
                 <div className="text-box">
-                    <p className="sub">BEST IT COMPANY</p>
+                    <p className="sub">Programming Language Education Center</p>
 
                     <h1>
-                        Get Our Business <br />
-                        <span>This IT Solution</span>
+                        Start Learning Now<br />
+                        <span>Programming Language Learning Solutions</span>
                     </h1>
 
                     <p className="desc">
-                        We deliver intelligent IT solutions helping business improve online
-                        conversion, enhance branding, and deliver great user experience.
+                        We help you master programming languages, understand core concepts,
+                        and create real application projects.
                     </p>
 
                     <div className="btn-group">
@@ -27,7 +28,7 @@ export default function HeroSection() {
 
                 <div className="img-box">
                     <img
-                        src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg"
+                        src={logo}
                         alt="Team Work"
                     />
                 </div>

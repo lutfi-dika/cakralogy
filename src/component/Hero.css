@@ -34,6 +34,7 @@ h1 {
 
 h1 span {
   color: #ffd325;
+  font-size: 40px;
 }
 
 .desc {
@@ -92,7 +93,7 @@ h1 span {
 /* WAVE */
 .wave-wrap {
   position: absolute;
-  
+
   left: 0;
   width: 100%;
 }
@@ -102,7 +103,7 @@ h1 span {
   height: 85px;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -125,10 +126,16 @@ a{
   .img-box img {
     height: 330px;
   }
-}
 
-@media (max-width: 600px) {
+  .sub {
+    font-size: 1rem;
+  }
+
   h1 {
-    font-size: 40px;
+    font-size: 1.9rem;
+  }
+  h1 span {
+    font-size: 30px;
   }
 }
+
