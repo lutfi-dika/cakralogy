@@ -1,3 +1,4 @@
+/* ================= Ad Banner ================= */
 .ad-banner {
   width: 100%;
   background: linear-gradient(135deg, #f97316, #facc15);
@@ -57,7 +58,58 @@
   border-radius: 10px;
 }
 
-/* ===== Responsive ===== */
+/* ================= Popup ================= */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  padding: 30px 40px;
+  border-radius: 20px;
+  color: white;
+  max-width: 400px;
+  text-align: center;
+  background: linear-gradient(135deg, #f97316, #facc15);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+.popup-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.popup-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: white;
+  color: #f97316;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+  background-color: #f97316;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* ================= Responsive ================= */
 @media screen and (max-width: 768px) {
   .ad-content {
     flex-direction: column;
@@ -80,5 +132,18 @@
   .ad-image img {
     width: 80%;
     margin-top: 20px;
+  }
+
+  .popup-content {
+    max-width: 90%;
+    padding: 25px 20px;
+  }
+
+  .popup-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .popup-content p {
+    font-size: 0.95rem;
   }
 }
